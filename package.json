@@ -1,0 +1,10 @@
+{
+  "name": "AirBnB",
+  "scripts": {
+    "dev" : "tailwindcss -i ./src/styles.css -o ./public/css/app.css",
+    "watch" : "tailwindcss -i ./src/styles.css -o ./public/css/app.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

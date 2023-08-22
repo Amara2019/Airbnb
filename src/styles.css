@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.airbnb-card{
+    @apply bg-slate-300 h-8 w-96 shadow-lg;
+    font-size: 5rem;
+}

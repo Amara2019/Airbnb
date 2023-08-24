@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Tester</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <h1 class="text-4xl text-red-400">
+        Testing Http
+    </h1>
+    <button onclick="loadUser()" class="py-1 px-4 rounded-md bg-teal-800 text-white mt-4">
+        Fetch Api Users
+    </button>
+
+    
+    <button onclick="loadOurBackend()" class="py-1 px-4 rounded-md bg-teal-800 text-white mt-4">
+        Fetch Our Backend Test
+    </button>
+
+    <div id="users">
+
+    </div>
+
+    
+    <script>
+
+
+        function loadUser() {
+            let users = '';
+            fetch('https://jsonplaceholder.typicode.com/users')
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+                data.forEach(user => {
+                    users += `<div>${user.name}</div>`;
+                });
+                document.getElementById('users').innerHTML = users;
+            })
+        }
+
+        
+        function loadOurBackend() {
+            fetch('./../server/index.php')
+            .then((res) => res.text())
+            .then((data) => console.log(data))
+        }
+    </script>
+</body>
+</html>

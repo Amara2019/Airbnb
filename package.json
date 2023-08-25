@@ -1,10 +1,14 @@
 {
   "name": "AirBnB",
   "scripts": {
-    "dev" : "tailwindcss -i ./src/styles.css -o ./public/css/app.css",
-    "watch" : "tailwindcss -i ./src/styles.css -o ./public/css/app.css --watch"
+    "dev": "tailwindcss -i ./src/styles.css -o ./public/css/app.css",
+    "watch": "tailwindcss -i ./src/styles.css -o ./public/css/app.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "font-awesome": "^4.7.0"
   }
 }

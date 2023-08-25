@@ -6,3 +6,45 @@
     @apply bg-slate-300 h-8 w-96 shadow-lg;
     font-size: 5rem;
 }
+
+#homebg{
+    background-image: url('../../img/pic.png');
+}
+
+/* nav{
+    background-
+    color: white;
+} */
+/* nav ul{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5px 10px;
+} */
+/* nav li{ */
+    /* color: white; */
+    /* text-decoration: none; */
+    /* padding: 5px 15px; */
+    /* display: inline-block; */
+    /* border-radius: 5px; */
+/*     
+} */
+nav li:hover{
+    /* background-color: white; */
+    border-bottom: 2px solid white;
+}
+/* nav li{ */
+    /* list-style-type: none; */
+    /* display: inline-block; */
+/* } */
+
+/* .nav{
+    @apply relative ml-10 text-white 
+    font-mono font-bold tracking[1px]
+    hover:text-white
+}
+
+.nav::after{
+    @apply content-[''] bg-red-500 h-[3px]
+      w-[0%] left-0 -bottom-[5px]
+       rounded-xl absolute  
+} */

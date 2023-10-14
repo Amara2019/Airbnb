@@ -9,6 +9,7 @@ module.exports = {
         secondary: '#5B7B7A',
         ancent: '#5B7B7A',
         "color-light": '#E0F2E9',
+        dark: '#000',
       },
     },
   },

@@ -1,0 +1,123 @@
+<section class="h-full flex flex-col justify-between bg-[#E0F2E9]">
+    <!-- Brand Image -->
+    <aside class="  flex justify-center items-center">
+
+         <!-- Menu/Navigation -->
+    <aside class="flex-grow">
+        <aside class="flex-grow">
+            <ul>
+
+                <h1 class="py-3 text-primary font-bold">
+                    <i class="fas fa-home"></i>
+                     HomeFinder</h1>
+                <li>
+                    <a href="dashboard.php" class="py-2 px-4  hover:border rounded-lg block">
+                        <i class="fa fa-tachometer-alt"></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="manage_properties.php" class="py-2 px-4  hover:border rounded-lg block">
+                        <i class="fa fa-comments"></i> Manage Properties
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="py-2 px-4  hover:border rounded-lg block">
+                        <i class="fas fa-user-circle px-2"></i> Tenants
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="py-2 px-4  hover:border rounded-lg block">
+                        <i class="fab fa-magento px-2"></i>Agents
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="py-2 px-4  hover:border rounded-lg block">
+                        <i class="far fa-comment-dots px-2"></i> Review
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="py-2 px-4  hover:border rounded-lg block">
+                        <i class="far fa-envelope px-2"></i>Messages
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="py-2 px-4  hover:border rounded-lg block">
+                        <i class="far fa-calendar-alt px-2"></i>Calender
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="py-2 px-4  hover:border rounded-lg block">
+                     <i class="far fa-bell px-2"></i> Updates
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </aside>
+
+       
+        <!-- <ul class="">
+            <h1 class="py-3 text-primary font-bold">
+                <i class="fas fa-home"></i>
+                 HomeFinder</h1>
+            <li class="py-2"> Dashboard</li>
+            <li class="py-2">
+                <i class="far fa-building px-2">
+            </i>My property</li>
+            <li class="py-2">
+                <i class="fas fa-clipboard-list px-2"></i>
+                To do</li>
+            <li class="py-2">
+                <i class="fas fa-user-circle px-2"></i>
+                Tenants</li>
+            <li class="py-2">
+                <i class="fab fa-magento px-2"></i>
+                Agents</li>
+            <li class="py-2">
+                <i class="far fa-comment-dots px-2"></i>
+                Review</li>
+            <li class="py-2">
+                <i class="far fa-envelope px-2"></i>
+                Messages</li>
+            <li class="py-2">
+                <i class="far fa-calendar-alt px-2"></i>
+                Calender</li>
+            <li class="py-2">
+                <i class="far fa-bell px-2"></i>
+                Updates</li>
+        </ul> -->
+    </aside>
+
+   
+    <!-- Extra -->
+    <aside class="px-3 py-2">
+        <form id="frm_logout" class="flex gap-3 px-4">
+            <button type="submit" class="bg-primary text-white py-2  w-full rounded-lg">
+                <i class="fa fa-sign-out-alt"></i> Logout
+            </button>
+            <button type="submit" class="bg-primary text-white w-14 rounded-lg">
+                <i class="fas fa-cog"></i>
+            </button>
+        </form>
+    </aside>
+</section>
+
+<script>
+    let frmLogin = document.getElementById('frm_logout');
+
+    frmLogin.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // remove the active_user from session storage
+        sessionStorage.removeItem('active_user');
+
+        // Send a login to backend
+
+        // If the request is successful, redirect to the dashboard
+        window.location.href = '../index.php';
+
+    })
+</script>

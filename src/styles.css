@@ -7,8 +7,16 @@
     font-size: 5rem;
 }
 
-#homebg{
-    background-image: url('../../img/pic.png');
+/* #homebg{
+    background-image: url('../images/pic.png');
+} */
+
+#aboutbg{
+    background-image: url('../images/pix.png');
+}
+
+#testbg{
+    background-image: url('../images/inner-bg.jpg');
 }
 
 /* nav{
